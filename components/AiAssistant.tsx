@@ -9,15 +9,15 @@ interface AiAssistantProps {
   isLoading: boolean;
 }
 
-export const AiAssistant: React.FC<AiAssistantProps> = ({ history, onSendMessage, isLoading }) => {
+export const AiAssistant = ({ history, onSendMessage, isLoading }: AiAssistantProps) => {
   const [input, setInput] = useState('');
-  const chatEndRef = useRef<HTMLDivElement>(null);
+  const chatEndRef = useRef(null);
 
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [history, isLoading]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     if (input.trim() && !isLoading) {
       onSendMessage(input);

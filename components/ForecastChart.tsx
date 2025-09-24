@@ -1,13 +1,13 @@
 
 import React from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { ForecastDataPoint } from '../types';
 
 interface ForecastChartProps {
   data: ForecastDataPoint[];
 }
 
-export const ForecastChart: React.FC<ForecastChartProps> = ({ data }) => {
+export const ForecastChart = ({ data }: ForecastChartProps) => {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <LineChart
@@ -26,7 +26,6 @@ export const ForecastChart: React.FC<ForecastChartProps> = ({ data }) => {
           contentStyle={{ backgroundColor: '#2D3748', border: '1px solid #4A5568', color: '#E2E8F0' }}
           labelStyle={{ color: '#E2E8F0' }}
         />
-        <Legend wrapperStyle={{color: '#A0AEC0'}}/>
         <Line type="monotone" dataKey="power" stroke="#38B2AC" strokeWidth={2} activeDot={{ r: 8 }} dot={{r: 2}} name="Predicted Power"/>
       </LineChart>
     </ResponsiveContainer>

@@ -4,17 +4,17 @@ import { LocationIcon, CapacityIcon, TiltIcon, AzimuthIcon, ModelIcon } from './
 
 interface SolarConfigFormProps {
   config: SolarPanelConfig;
-  setConfig: React.Dispatch<React.SetStateAction<SolarPanelConfig>>;
+  setConfig: (config: SolarPanelConfig | ((prev: SolarPanelConfig) => SolarPanelConfig)) => void;
   onPredict: () => void;
   isLoading: boolean;
 }
 
 const FormInput = <T,>({ icon, label, id, value, onChange, ...props }: {
-    icon: React.ReactNode,
+    icon: any,
     label: string,
     id: string,
     value: T,
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void,
+    onChange: (e: any) => void,
     [key: string]: any
 }) => (
     <div>
@@ -34,12 +34,12 @@ const FormInput = <T,>({ icon, label, id, value, onChange, ...props }: {
 
 // FIX: Allow passing additional props (like `name`) to the select element to fix a TypeScript error.
 const FormSelect = ({ icon, label, id, value, onChange, children, ...props }: {
-    icon: React.ReactNode,
+    icon: any,
     label: string,
     id: string,
     value: string,
-    onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void,
-    children: React.ReactNode,
+    onChange: (e: any) => void,
+    children: any,
     [key: string]: any
 }) => (
     <div>
@@ -60,8 +60,8 @@ const FormSelect = ({ icon, label, id, value, onChange, children, ...props }: {
 );
 
 
-export const SolarConfigForm: React.FC<SolarConfigFormProps> = ({ config, setConfig, onPredict, isLoading }) => {
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+export const SolarConfigForm = ({ config, setConfig, onPredict, isLoading }: SolarConfigFormProps) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setConfig(prev => ({ ...prev, [name]: name === 'model' ? value : parseFloat(value) || 0 }));
   };
@@ -98,11 +98,10 @@ export const SolarConfigForm: React.FC<SolarConfigFormProps> = ({ config, setCon
         <FormSelect
             icon={<ModelIcon className="w-5 h-5 text-gray-400"/>}
             label="Prediction Model" id="model" name="model"
-            value={config.model} onChange={handleChange}>
-            {Object.values(PredictionModel).map(model => (
+            value={config.model} onChange={handleChange}
+            children={Object.values(PredictionModel).map(model => (
                 <option key={model} value={model}>{model}</option>
-            ))}
-        </FormSelect>
+            ))} />
 
       <div className="flex-grow"></div>
 

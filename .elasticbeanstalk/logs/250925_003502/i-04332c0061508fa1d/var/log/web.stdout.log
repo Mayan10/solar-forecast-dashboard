@@ -1,0 +1,456 @@
+Sep 24 18:17:41 ip-172-31-40-101 web[2215]: > solar@1.0.0 start
+Sep 24 18:17:41 ip-172-31-40-101 web[2215]: > node server.js
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]:            ^
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]:  originalPath: '*'
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]: }
+Sep 24 18:17:41 ip-172-31-40-101 web[2257]: Node.js v22.19.0
+Sep 24 18:17:42 ip-172-31-40-101 web[2300]: > solar@1.0.0 start
+Sep 24 18:17:42 ip-172-31-40-101 web[2300]: > node server.js
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]:            ^
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]:  originalPath: '*'
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]: }
+Sep 24 18:17:42 ip-172-31-40-101 web[2314]: Node.js v22.19.0
+Sep 24 18:17:43 ip-172-31-40-101 web[2322]: > solar@1.0.0 start
+Sep 24 18:17:43 ip-172-31-40-101 web[2322]: > node server.js
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]:            ^
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]:  originalPath: '*'
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]: }
+Sep 24 18:17:43 ip-172-31-40-101 web[2336]: Node.js v22.19.0
+Sep 24 18:17:44 ip-172-31-40-101 web[2344]: > solar@1.0.0 start
+Sep 24 18:17:44 ip-172-31-40-101 web[2344]: > node server.js
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]:            ^
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]:  originalPath: '*'
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]: }
+Sep 24 18:17:44 ip-172-31-40-101 web[2358]: Node.js v22.19.0
+Sep 24 18:17:45 ip-172-31-40-101 web[2366]: > solar@1.0.0 start
+Sep 24 18:17:45 ip-172-31-40-101 web[2366]: > node server.js
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]:            ^
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]:  originalPath: '*'
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]: }
+Sep 24 18:17:45 ip-172-31-40-101 web[2380]: Node.js v22.19.0
+Sep 24 18:17:46 ip-172-31-40-101 web[2388]: > solar@1.0.0 start
+Sep 24 18:17:46 ip-172-31-40-101 web[2388]: > node server.js
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]:            ^
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]:  originalPath: '*'
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]: }
+Sep 24 18:17:46 ip-172-31-40-101 web[2402]: Node.js v22.19.0
+Sep 24 18:20:53 ip-172-31-40-101 web[2977]: > solar@1.0.0 start
+Sep 24 18:20:53 ip-172-31-40-101 web[2977]: > node server.js
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]:            ^
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]:  originalPath: '*'
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]: }
+Sep 24 18:20:54 ip-172-31-40-101 web[3020]: Node.js v22.19.0
+Sep 24 18:20:54 ip-172-31-40-101 web[3050]: > solar@1.0.0 start
+Sep 24 18:20:54 ip-172-31-40-101 web[3050]: > node server.js
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]:            ^
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]:  originalPath: '*'
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]: }
+Sep 24 18:20:55 ip-172-31-40-101 web[3064]: Node.js v22.19.0
+Sep 24 18:20:55 ip-172-31-40-101 web[3072]: > solar@1.0.0 start
+Sep 24 18:20:55 ip-172-31-40-101 web[3072]: > node server.js
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]:            ^
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]:  originalPath: '*'
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]: }
+Sep 24 18:20:56 ip-172-31-40-101 web[3086]: Node.js v22.19.0
+Sep 24 18:20:56 ip-172-31-40-101 web[3094]: > solar@1.0.0 start
+Sep 24 18:20:56 ip-172-31-40-101 web[3094]: > node server.js
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]:            ^
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]:  originalPath: '*'
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]: }
+Sep 24 18:20:57 ip-172-31-40-101 web[3108]: Node.js v22.19.0
+Sep 24 18:20:57 ip-172-31-40-101 web[3117]: > solar@1.0.0 start
+Sep 24 18:20:57 ip-172-31-40-101 web[3117]: > node server.js
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]:            ^
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]:  originalPath: '*'
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]: }
+Sep 24 18:20:58 ip-172-31-40-101 web[3131]: Node.js v22.19.0
+Sep 24 18:20:58 ip-172-31-40-101 web[3142]: > solar@1.0.0 start
+Sep 24 18:20:58 ip-172-31-40-101 web[3142]: > node server.js
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]:            ^
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]:  originalPath: '*'
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]: }
+Sep 24 18:20:58 ip-172-31-40-101 web[3156]: Node.js v22.19.0
+Sep 24 18:52:54 ip-172-31-40-101 web[4811]: > solar@1.0.0 start
+Sep 24 18:52:54 ip-172-31-40-101 web[4811]: > node server.js
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]:            ^
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]:  originalPath: '*'
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]: }
+Sep 24 18:52:54 ip-172-31-40-101 web[4856]: Node.js v22.19.0
+Sep 24 18:52:55 ip-172-31-40-101 web[4887]: > solar@1.0.0 start
+Sep 24 18:52:55 ip-172-31-40-101 web[4887]: > node server.js
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]:            ^
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]:  originalPath: '*'
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]: }
+Sep 24 18:52:55 ip-172-31-40-101 web[4901]: Node.js v22.19.0
+Sep 24 18:52:56 ip-172-31-40-101 web[4909]: > solar@1.0.0 start
+Sep 24 18:52:56 ip-172-31-40-101 web[4909]: > node server.js
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]:            ^
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]:  originalPath: '*'
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]: }
+Sep 24 18:52:56 ip-172-31-40-101 web[4923]: Node.js v22.19.0
+Sep 24 18:52:57 ip-172-31-40-101 web[4931]: > solar@1.0.0 start
+Sep 24 18:52:57 ip-172-31-40-101 web[4931]: > node server.js
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]:            ^
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]:  originalPath: '*'
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]: }
+Sep 24 18:52:57 ip-172-31-40-101 web[4945]: Node.js v22.19.0
+Sep 24 18:52:58 ip-172-31-40-101 web[4953]: > solar@1.0.0 start
+Sep 24 18:52:58 ip-172-31-40-101 web[4953]: > node server.js
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]:            ^
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]:  originalPath: '*'
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]: }
+Sep 24 18:52:58 ip-172-31-40-101 web[4967]: Node.js v22.19.0
+Sep 24 18:52:58 ip-172-31-40-101 web[4976]: > solar@1.0.0 start
+Sep 24 18:52:58 ip-172-31-40-101 web[4976]: > node server.js
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]:            ^
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]:  originalPath: '*'
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]: }
+Sep 24 18:52:59 ip-172-31-40-101 web[4990]: Node.js v22.19.0
+Sep 24 19:00:06 ip-172-31-40-101 web[5740]: > solar@1.0.0 start
+Sep 24 19:00:06 ip-172-31-40-101 web[5740]: > node server.js
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]:            ^
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]:  originalPath: '*'
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]: }
+Sep 24 19:00:06 ip-172-31-40-101 web[5787]: Node.js v22.19.0
+Sep 24 19:00:07 ip-172-31-40-101 web[5815]: > solar@1.0.0 start
+Sep 24 19:00:07 ip-172-31-40-101 web[5815]: > node server.js
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]:            ^
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]:  originalPath: '*'
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]: }
+Sep 24 19:00:07 ip-172-31-40-101 web[5829]: Node.js v22.19.0
+Sep 24 19:00:08 ip-172-31-40-101 web[5838]: > solar@1.0.0 start
+Sep 24 19:00:08 ip-172-31-40-101 web[5838]: > node server.js
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]:            ^
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]:  originalPath: '*'
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]: }
+Sep 24 19:00:08 ip-172-31-40-101 web[5852]: Node.js v22.19.0
+Sep 24 19:00:09 ip-172-31-40-101 web[5860]: > solar@1.0.0 start
+Sep 24 19:00:09 ip-172-31-40-101 web[5860]: > node server.js
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]:            ^
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]:  originalPath: '*'
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]: }
+Sep 24 19:00:09 ip-172-31-40-101 web[5874]: Node.js v22.19.0
+Sep 24 19:00:10 ip-172-31-40-101 web[5885]: > solar@1.0.0 start
+Sep 24 19:00:10 ip-172-31-40-101 web[5885]: > node server.js
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]:            ^
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]:  originalPath: '*'
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]: }
+Sep 24 19:00:10 ip-172-31-40-101 web[5899]: Node.js v22.19.0
+Sep 24 19:00:11 ip-172-31-40-101 web[5908]: > solar@1.0.0 start
+Sep 24 19:00:11 ip-172-31-40-101 web[5908]: > node server.js
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]: /var/app/current/node_modules/path-to-regexp/dist/index.js:96
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]:            throw new PathError(`Missing parameter name at index ${index}`, str);
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]:            ^
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]:    at name (/var/app/current/node_modules/path-to-regexp/dist/index.js:96:19)
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]:    at parse (/var/app/current/node_modules/path-to-regexp/dist/index.js:113:68)
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]:    at pathToRegexp (/var/app/current/node_modules/path-to-regexp/dist/index.js:267:58)
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]:    at Object.match (/var/app/current/node_modules/path-to-regexp/dist/index.js:237:30)
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]:    at matcher (/var/app/current/node_modules/router/lib/layer.js:86:23)
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]:    at new Layer (/var/app/current/node_modules/router/lib/layer.js:93:62)
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]:    at Function.route (/var/app/current/node_modules/router/index.js:428:17)
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]:    at Function.route (/var/app/current/node_modules/express/lib/application.js:257:22)
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]:    at app.<computed> [as get] (/var/app/current/node_modules/express/lib/application.js:478:22)
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]:    at Object.<anonymous> (/var/app/current/server.js:9:5) {
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]:  originalPath: '*'
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]: }
+Sep 24 19:00:11 ip-172-31-40-101 web[5922]: Node.js v22.19.0
