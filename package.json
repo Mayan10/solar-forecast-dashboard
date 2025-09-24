@@ -1,8 +1,33 @@
 {
   "dependencies": {
-    "@google/genai": "^1.20.0"
+    "@google/genai": "^1.20.0",
+    "express": "^5.1.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "recharts": "^3.2.1"
   },
   "devDependencies": {
     "@types/node": "^24.5.2"
-  }
+  },
+  "name": "solar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "tsc && vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mayan10/solar-forecast-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Mayan10/solar-forecast-dashboard/issues"
+  },
+  "homepage": "https://github.com/Mayan10/solar-forecast-dashboard#readme"
 }
