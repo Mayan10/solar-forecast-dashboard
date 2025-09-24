@@ -13,4 +13,7 @@ phases:
       - npm run build
 artifacts:
   files:
-    - '**/*'
+    - 'dist/**/*'
+    - 'server.js'
+    - 'package.json'
+    - 'package-lock.json'
