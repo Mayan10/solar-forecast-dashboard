@@ -2,7 +2,7 @@
 import React from 'react';
 import { SunIcon } from './icons';
 
-export const WelcomeScreen = () => {
+export const WelcomeScreen: React.FC = () => {
     return (
         <div className="flex-grow flex flex-col items-center justify-center text-center bg-gray-800 p-6 rounded-lg shadow-lg">
             <SunIcon className="w-24 h-24 text-yellow-400 animate-pulse" />

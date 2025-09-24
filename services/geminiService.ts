@@ -1,12 +1,9 @@
 import { GoogleGenAI } from "@google/genai";
 import { SolarPanelConfig, ForecastDataPoint, ChatMessage } from '../types';
 
-// FIX: Initialize GoogleGenAI client with a runtime guard so the API key is a string.
-const API_KEY = process.env.API_KEY;
-if (!API_KEY) {
-    throw new Error("Missing Gemini API key in process.env.API_KEY");
-}
-const ai = new GoogleGenAI({ apiKey: API_KEY });
+// FIX: Initialize GoogleGenAI client directly with process.env.API_KEY as per guidelines,
+// assuming the API key is always available in the environment.
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 const formatForecastDataForPrompt = (data: ForecastDataPoint[]): string => {
     return data.map(d => `${d.time}: ${d.power} kW`).join('\n');
@@ -52,8 +49,7 @@ Format your response using markdown for clarity (e.g., bolding for titles).
             model: 'gemini-2.5-flash',
             contents: prompt,
         });
-        const text = response.text ?? "";
-        return text;
+        return response.text;
     } catch (error) {
         console.error("Gemini API error in getInitialInsight:", error);
         return "There was an error generating the initial analysis. Please try again.";
@@ -87,8 +83,7 @@ ai:
             model: 'gemini-2.5-flash',
             contents: prompt,
         });
-        const text = response.text ?? "";
-        return text;
+        return response.text;
     } catch (error) {
         console.error("Gemini API error in getChatResponse:", error);
         return "I'm sorry, I encountered an issue trying to respond. Could you please ask again?";
