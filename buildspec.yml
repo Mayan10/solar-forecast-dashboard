@@ -7,17 +7,22 @@ phases:
       nodejs: 20
     commands:
       - echo "Installing Node.js dependencies..."
-      - npm install
+      - npm ci --only=production
+      - npm install --only=dev
 
   build:
     commands:
       - echo "Build started on $(date)"
-      - echo "Running build command..."
-      - npm run build
-      - echo "Verifying build output..."
-      - ls -la dist/
+      - echo "Creating dist directory..."
+      - mkdir -p dist
+      - echo "Running CSS build..."
+      - npx tailwindcss -i ./main.css -o ./dist/index.css --minify
+      - echo "Running JS build..."
+      - npx esbuild index.tsx --bundle --outfile=dist/index.js --jsx=automatic --loader:.tsx=tsx --minify
       - echo "Copying index.html to dist..."
       - cp index.html dist/
+      - echo "Verifying build output..."
+      - ls -la dist/
 
   post_build:
     commands:

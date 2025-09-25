@@ -6,9 +6,9 @@
   "scripts": {
     "start": "node server.js",
     "build:css": "tailwindcss -i ./main.css -o ./dist/index.css --minify",
-    "build:js": "esbuild index.tsx --bundle --outfile=dist/index.js --jsx=automatic --loader:.tsx=tsx --minify --external:react --external:react-dom",
-    "build": "npm run build:css && npm run build:js && cp index.html dist/",
-    "postinstall": "npm run build"
+    "build:js": "esbuild index.tsx --bundle --outfile=dist/index.js --jsx=automatic --loader:.tsx=tsx --minify",
+    "build": "mkdir -p dist && npm run build:css && npm run build:js && cp index.html dist/",
+    "dev": "npm run build && node server.js"
   },
   "author": "AI Assistant",
   "license": "ISC",
