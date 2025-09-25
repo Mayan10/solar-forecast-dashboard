@@ -85,11 +85,9 @@ app.post('/api/predict', async (req, res) => {
         if (!jsonText) {
             throw new Error("API returned an empty response.");
         }
-
-        const jsonMatch = jsonText.match(/\\`\\`\\`json\\n([\\s\\S]*?)\\n\\`\\`\\`|^\\s*(\\[[\\s\\S]*\\])\\s*$/);
-        const parsableText = jsonMatch ? (jsonMatch[1] || jsonMatch[2]) : jsonText;
-
-        const parsedData = JSON.parse(parsableText);
+        
+        // No need to check for markdown, the schema guarantees JSON
+        const parsedData = JSON.parse(jsonText);
         res.json(parsedData);
     } catch (error) {
         console.error("Error calling Gemini API:", error);
@@ -99,12 +97,14 @@ app.post('/api/predict', async (req, res) => {
 
 
 // --- Static File Serving for Production ---
-// Serve the built frontend files from the 'dist' directory
+// **CRITICAL FIX**: Serve static files from 'dist' directory BEFORE the catch-all route.
+// This ensures that requests for /index.css, /index.js, etc., are handled correctly.
 app.use(express.static(path.join(__dirname, 'dist')));
 
-// For any route that is not an API call or a static file, serve the main index.html
+// For any route that is not an API call or a static file, serve the main index.html.
+// This is the catch-all for Single Page Application (SPA) routing.
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 
