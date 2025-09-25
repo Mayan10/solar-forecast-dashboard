@@ -1,4 +1,5 @@
 {
-    "name": "Solar Energy Prediction Dashboard",
-    "description": "A web application that provides solar energy generation forecasts using various prediction models and offers AI-powered insights. Users can input solar panel configurations to receive detailed 24-hour power output predictions visualized in charts and analyzed by an intelligent assistant."
+    "name": "Solar Forecast Dashboard Fix",
+    "description": "A React application that displays solar power generation forecasts and provides AI-powered insights. This version fixes build issues and updates the Gemini API integration.",
+    "requestFramePermissions": []
   }

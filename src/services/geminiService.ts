@@ -1,89 +1,77 @@
-import { GoogleGenAI } from "@google/genai";
-// FIX: Added .ts extension to the import path to resolve the module loading error.
-import { SolarPanelConfig, ForecastDataPoint, ChatMessage } from '../types.ts';
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+import { GoogleGenAI, Type } from "@google/genai";
+import type { AiInsight, ForecastDataPoint } from '../types';
 
-const formatForecastDataForPrompt = (data: ForecastDataPoint[]): string => {
-    return data.map(d => `${d.time}: ${d.power} kW`).join('\n');
-};
+// FIX: Per coding guidelines, the API key must be obtained exclusively from process.env.API_KEY.
+// The GoogleGenAI client is initialized once and reused.
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY! });
 
-const formatConfigForPrompt = (config: SolarPanelConfig): string => {
-    return `
-- Location: Latitude ${config.latitude}, Longitude ${config.longitude}
-- System Capacity: ${config.capacity} kWp
-- Panel Tilt: ${config.tilt}°
-- Panel Azimuth: ${config.azimuth}°
-- Prediction Model Used: ${config.model}
-    `;
-}
+// FIX: Removed userApiKey parameter as API key should not be passed from the UI.
+export const getInsight = async (forecastData: ForecastDataPoint[]): Promise<AiInsight | null> => {
 
-export const getInitialInsight = async (forecastData: ForecastDataPoint[], config: SolarPanelConfig): Promise<string> => {
-    const prompt = `
-You are an expert AI Solar Analyst. Your role is to provide clear, concise, and helpful insights into solar energy forecasts.
+  const summarizedData = forecastData
+    .slice(0, 20) // Use a subset of data to keep the prompt concise
+    .map(d => `Time: ${d.timestamp}, Forecast: ${d.pv_estimate.toFixed(2)} kW`)
+    .join('\n');
 
-A 24-hour solar power forecast has been generated with the following configuration:
-${formatConfigForPrompt(config)}
-
-Here is the forecast data (Time: Power in kW):
-${formatForecastDataForPrompt(forecastData)}
-
-Based on this data, provide an initial analysis. Your response should be structured as follows:
-
-1.  **Forecast Summary:** A brief, one-sentence summary of the day's solar generation.
-2.  **Key Metrics:**
-    *   **Peak Power:** The maximum power output and the time it occurs.
-    *   **Total Energy:** The estimated total energy generated over the 24-hour period (sum of hourly kW).
-3.  **Key Observation:** One or two important observations, such as the shape of the generation curve or when power ramps up and down.
-4.  **Next Steps:** A concluding sentence encouraging the user to ask more questions.
-
-Format your response using markdown for clarity (e.g., bolding for titles).
-    `;
-
-    try {
-        const response = await ai.models.generateContent({
-            model: 'gemini-2.5-flash',
-            contents: prompt,
-        });
-        // FIX: Per Gemini API guidelines, response.text provides the direct string output.
-        return response.text;
-    } catch (error) {
-        console.error("Gemini API error in getInitialInsight:", error);
-        return "There was an error generating the initial analysis. Please try again.";
-    }
-};
-
-export const getChatResponse = async (history: ChatMessage[], forecastData: ForecastDataPoint[], config: SolarPanelConfig): Promise<string> => {
-    const chatHistory = history.map(msg => `${msg.sender === 'user' ? 'User' : 'AI'}: ${msg.text}`).join('\n');
+  const prompt = `
+    Analyze the following solar PV generation forecast data. Provide a concise, insightful analysis for a homeowner or small business owner.
+    Focus on actionable advice.
     
-    const prompt = `
-You are an expert AI Solar Analyst continuing a conversation with a user.
+    Data:
+    ${summarizedData}
 
-**System Configuration:**
-${formatConfigForPrompt(config)}
+    Based on this data, provide:
+    1.  A short, catchy title for the insight (e.g., "Sunny Outlook with Morning Peak").
+    2.  A brief explanation of the forecast pattern (e.g., "Expect strong solar generation in the morning, tapering off in the afternoon.").
+    3.  A list of 2-3 practical suggestions (e.g., "Run high-energy appliances like the dishwasher around 11 AM," "Charge your electric vehicle between 10 AM and 2 PM.").
+  `;
 
-**Full 24-Hour Forecast Data (for context):**
-${formatForecastDataForPrompt(forecastData)}
+  try {
+    const response = await ai.models.generateContent({
+      model: "gemini-2.5-flash",
+      contents: prompt,
+      config: {
+        responseMimeType: "application/json",
+        responseSchema: {
+          type: Type.OBJECT,
+          properties: {
+            title: {
+              type: Type.STRING,
+              description: "A short, catchy title for the insight."
+            },
+            explanation: {
+              type: Type.STRING,
+              description: "A brief explanation of the forecast pattern."
+            },
+            suggestions: {
+              type: Type.ARRAY,
+              items: {
+                type: Type.STRING
+              },
+              description: "A list of practical suggestions."
+            }
+          },
+          required: ["title", "explanation", "suggestions"]
+        },
+      }
+    });
 
-**Conversation History:**
-${chatHistory}
+    const jsonText = response.text.trim();
+    const parsedJson = JSON.parse(jsonText);
 
-The user just sent a new message. Based on the entire context (system config, forecast data, and conversation history), provide a helpful and relevant response to the user's latest message. Be concise and stay on topic.
-If the user's question is unrelated to the solar forecast, gently guide them back to the topic.
-
-User's new message is the last one in the history. Formulate your AI response now.
-AI: 
-    `;
-
-    try {
-        const response = await ai.models.generateContent({
-            model: 'gemini-2.5-flash',
-            contents: prompt,
-        });
-        // FIX: Per Gemini API guidelines, response.text provides the direct string output.
-        return response.text;
-    } catch (error) {
-        console.error("Gemini API error in getChatResponse:", error);
-        return "I'm sorry, I encountered an issue trying to respond. Could you please ask again?";
+    if (parsedJson.title && parsedJson.explanation && Array.isArray(parsedJson.suggestions)) {
+        return parsedJson as AiInsight;
+    } else {
+        console.error("Parsed JSON does not match AiInsight structure:", parsedJson);
+        return null;
     }
+    
+  } catch (error) {
+    console.error("Error generating insight from Gemini:", error);
+    if (error instanceof Error) {
+        throw new Error(`Failed to get insights from Gemini: ${error.message}`);
+    }
+    throw new Error("An unknown error occurred while communicating with the Gemini API.");
+  }
 };

@@ -3,17 +3,17 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 20
+      nodejs: 18
     commands:
-      - echo Installing dependencies...
+      - echo Installing source NPM dependencies...
       - npm install
   build:
     commands:
-      - echo Building the project...
+      - echo Build started on `date`
+      - echo Compiling the React app...
       - npm run build
+
 artifacts:
   files:
-    - 'dist/**/*'
-    - 'server.js'
-    - 'package.json'
-    - 'package-lock.json'
+    - '**/*'
+  base-directory: 'build'
