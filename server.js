@@ -99,13 +99,12 @@ app.post('/api/predict', async (req, res) => {
 // --- Static File Serving for Production ---
 // Because buildspec.yml uses 'discard-paths: yes', the 'dist' directory is flattened.
 // We must serve static files from the application root directory.
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'dist')));
 
-// For any route that is not an API call or a static file, serve the main index.html.
-// This is the catch-all for Single Page Application (SPA) routing.
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
+
 
 
 // --- Start Server ---

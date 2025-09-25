@@ -30,4 +30,4 @@ artifacts:
     - package.json
     - package-lock.json # Important for consistent dependencies
     - 'dist/**/*'
-  discard-paths: yes
+  discard-paths: no
