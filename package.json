@@ -1,0 +1,28 @@
+{
+  "name": "solar-forecaster-ai-server",
+  "version": "1.0.0",
+  "description": "Backend and frontend for the Solar Power Forecaster AI application.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "esbuild index.tsx --bundle --outfile=dist/index.js --jsx=automatic --loader:.tsx=tsx --minify",
+    "postinstall": "npm run build"
+  },
+  "author": "AI Assistant",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "esbuild": "^0.23.0",
+    "typescript": "^5.5.4"
+  }
+}

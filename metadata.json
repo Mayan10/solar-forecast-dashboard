@@ -1,0 +1,5 @@
+{
+  "name": "Solar Power Forecaster AI",
+  "description": "An AI-powered application to predict solar panel power output based on location and system specifications. It provides hourly forecasts using a simulated physics-based model powered by Gemini.",
+  "requestFramePermissions": []
+}
