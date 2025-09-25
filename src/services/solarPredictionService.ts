@@ -1,3 +1,5 @@
+
+// FIX: Removed file extension from import path to resolve module loading error.
 import { SolarPanelConfig, ForecastDataPoint, PredictionModel } from '../types';
 
 /**

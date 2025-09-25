@@ -1,4 +1,6 @@
+
 import React from 'react';
+// FIX: Removed file extension from import path to resolve module loading error.
 import { SolarPanelConfig, PredictionModel } from '../types';
 import { LocationIcon, CapacityIcon, TiltIcon, AzimuthIcon, ModelIcon } from './icons';
 
@@ -32,6 +34,7 @@ const FormInput = <T,>({ icon, label, id, value, onChange, ...props }: {
     </div>
 );
 
+// FIX: Allow passing additional props (like `name`) to the select element to fix a TypeScript error.
 const FormSelect = ({ icon, label, id, value, onChange, children, ...props }: {
     icon: React.ReactNode,
     label: string,
@@ -98,7 +101,8 @@ export const SolarConfigForm: React.FC<SolarConfigFormProps> = ({ config, setCon
             icon={<ModelIcon className="w-5 h-5 text-gray-400"/>}
             label="Prediction Model" id="model" name="model"
             value={config.model} onChange={handleChange}>
-            {Object.values(PredictionModel).map(model => (
+            {/* FIX: Explicitly type `model` as string to resolve `unknown` type error from Object.values. */}
+            {Object.values(PredictionModel).map((model: string) => (
                 <option key={model} value={model}>{model}</option>
             ))}
         </FormSelect>
