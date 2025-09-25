@@ -1,0 +1,4 @@
+{
+    "name": "Solar Energy Prediction Dashboard",
+    "description": "A web application that provides solar energy generation forecasts using various prediction models and offers AI-powered insights. Users can input solar panel configurations to receive detailed 24-hour power output predictions visualized in charts and analyzed by an intelligent assistant."
+  }
