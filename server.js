@@ -1,3 +1,4 @@
+
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
@@ -85,6 +86,7 @@ app.post('/api/predict', async (req, res) => {
             throw new Error("API returned an empty response.");
         }
         
+        // No need to check for markdown, the schema guarantees JSON
         const parsedData = JSON.parse(jsonText);
         res.json(parsedData);
     } catch (error) {
@@ -95,11 +97,14 @@ app.post('/api/predict', async (req, res) => {
 
 
 // --- Static File Serving for Production ---
-app.use(express.static(path.join(__dirname, 'dist')));
+// Because buildspec.yml uses 'discard-paths: yes', the 'dist' directory is flattened.
+// We must serve static files from the application root directory.
+app.use(express.static(__dirname));
 
-// Catch-all route for SPA (React, Vue, etc.)
+// For any route that is not an API call or a static file, serve the main index.html.
+// This is the catch-all for Single Page Application (SPA) routing.
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 
