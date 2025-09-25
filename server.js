@@ -1,4 +1,3 @@
-
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
@@ -11,13 +10,15 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 // --- Pre-flight Checks ---
-if (!process.env.API_KEY) {
-    console.error("FATAL ERROR: API_KEY environment variable not set.");
+// Check for both possible environment variable names
+const API_KEY = process.env.API_KEY || process.env.GEMINI_API_KEY;
+if (!API_KEY) {
+    console.error("FATAL ERROR: API_KEY or GEMINI_API_KEY environment variable not set.");
     process.exit(1);
 }
 
 // --- Gemini AI Setup ---
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: API_KEY });
 const predictionSchema = {
     type: Type.ARRAY,
     items: {
@@ -52,15 +53,12 @@ Generate an hourly power output forecast in kilowatts (kW) for the next 24 hours
 The output must be a valid JSON array of objects, strictly conforming to the provided schema. The array must contain exactly 24 entries, one for each hour from 0 to 23.
 `;
 
-
 // --- Express App Setup ---
 const app = express();
 const PORT = process.env.PORT || 8080;
-const __dirname = path.resolve();
 
 app.use(cors());
 app.use(express.json());
-
 
 // --- API Route ---
 app.post('/api/predict', async (req, res) => {
@@ -86,7 +84,6 @@ app.post('/api/predict', async (req, res) => {
             throw new Error("API returned an empty response.");
         }
         
-        // No need to check for markdown, the schema guarantees JSON
         const parsedData = JSON.parse(jsonText);
         res.json(parsedData);
     } catch (error) {
@@ -95,19 +92,21 @@ app.post('/api/predict', async (req, res) => {
     }
 });
 
-
 // --- Static File Serving for Production ---
-// Because buildspec.yml uses 'discard-paths: yes', the 'dist' directory is flattened.
-// We must serve static files from the application root directory.
 app.use(express.static(path.join(__dirname, 'dist')));
+
+// Health check endpoint for Elastic Beanstalk
+app.get('/health', (req, res) => {
+    res.status(200).json({ status: 'healthy' });
+});
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
-
-
 // --- Start Server ---
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server listening on port ${PORT}`);
+    console.log(`API_KEY configured: ${!!API_KEY}`);
+    console.log(`Static files served from: ${path.join(__dirname, 'dist')}`);
 });

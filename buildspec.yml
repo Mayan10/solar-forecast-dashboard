@@ -3,7 +3,6 @@ version: 0.2
 
 phases:
   install:
-    # Specify the Node.js runtime version. Use a recent LTS version.
     runtime-versions:
       nodejs: 20
     commands:
@@ -13,21 +12,24 @@ phases:
   build:
     commands:
       - echo "Build started on $(date)"
-      # The 'npm install' command triggers the 'postinstall' script in package.json,
-      # which already runs the build command. We can verify the output here.
+      - echo "Running build command..."
+      - npm run build
       - echo "Verifying build output..."
-      - ls -la dist
+      - ls -la dist/
+      - echo "Copying index.html to dist..."
+      - cp index.html dist/
 
   post_build:
     commands:
       - echo "Build completed on $(date)"
+      - echo "Final dist contents:"
+      - ls -la dist/
 
 # Define the files to be packaged and deployed to Elastic Beanstalk
 artifacts:
   files:
     - server.js
-    - index.html
     - package.json
-    - package-lock.json # Important for consistent dependencies
+    - package-lock.json
     - 'dist/**/*'
   discard-paths: no

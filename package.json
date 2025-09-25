@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "build:css": "tailwindcss -i ./main.css -o ./dist/index.css --minify",
-    "build:js": "esbuild index.tsx --bundle --outfile=dist/index.js --jsx=automatic --loader:.tsx=tsx --minify",
-    "build": "npm run build:css && npm run build:js",
+    "build:js": "esbuild index.tsx --bundle --outfile=dist/index.js --jsx=automatic --loader:.tsx=tsx --minify --external:react --external:react-dom",
+    "build": "npm run build:css && npm run build:js && cp index.html dist/",
     "postinstall": "npm run build"
   },
   "author": "AI Assistant",
@@ -16,7 +16,10 @@
     "@google/genai": "^1.20.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.12.7"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
@@ -27,9 +30,6 @@
     "autoprefixer": "^10.4.19",
     "esbuild": "^0.23.0",
     "postcss": "^8.4.40",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "recharts": "^2.12.7",
     "tailwindcss": "^3.4.7",
     "typescript": "^5.5.4"
   }
