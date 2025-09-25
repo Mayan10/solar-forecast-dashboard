@@ -1,7 +1,7 @@
 
 import React from 'react';
-// FIX: Removed file extension from import path to resolve module loading error.
-import { SolarPanelConfig, PredictionModel } from '../types';
+// FIX: Added .ts extension to the import path to resolve the module loading error.
+import { SolarPanelConfig, PredictionModel } from '../types.ts';
 import { LocationIcon, CapacityIcon, TiltIcon, AzimuthIcon, ModelIcon } from './icons';
 
 interface SolarConfigFormProps {

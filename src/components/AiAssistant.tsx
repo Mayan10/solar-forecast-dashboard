@@ -1,8 +1,9 @@
 
 
+
 import React, { useState, useRef, useEffect } from 'react';
-// FIX: Removed file extension from import path to resolve module loading error.
-import { ChatMessage } from '../types';
+// FIX: Added .ts extension to the import path to resolve the module loading error.
+import { ChatMessage } from '../types.ts';
 import { PaperPlaneIcon, RobotIcon, UserIcon } from './icons';
 
 interface AiAssistantProps {

@@ -1,6 +1,6 @@
 
-// FIX: Removed file extension from import path to resolve module loading error.
-import { SolarPanelConfig, ForecastDataPoint, PredictionModel } from '../types';
+// FIX: Added .ts extension to the import path to resolve the module loading error.
+import { SolarPanelConfig, ForecastDataPoint, PredictionModel } from '../types.ts';
 
 /**
  * Generates a smooth, idealized solar curve based on a sine wave.

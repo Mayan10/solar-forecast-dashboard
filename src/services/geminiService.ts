@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
-// FIX: Removed file extension from import path to resolve module loading error.
-import { SolarPanelConfig, ForecastDataPoint, ChatMessage } from '../types';
+// FIX: Added .ts extension to the import path to resolve the module loading error.
+import { SolarPanelConfig, ForecastDataPoint, ChatMessage } from '../types.ts';
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
@@ -45,6 +45,7 @@ Format your response using markdown for clarity (e.g., bolding for titles).
             model: 'gemini-2.5-flash',
             contents: prompt,
         });
+        // FIX: Per Gemini API guidelines, response.text provides the direct string output.
         return response.text;
     } catch (error) {
         console.error("Gemini API error in getInitialInsight:", error);
@@ -79,6 +80,7 @@ AI:
             model: 'gemini-2.5-flash',
             contents: prompt,
         });
+        // FIX: Per Gemini API guidelines, response.text provides the direct string output.
         return response.text;
     } catch (error) {
         console.error("Gemini API error in getChatResponse:", error);

@@ -1,9 +1,10 @@
 
 
+
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-// FIX: Removed file extension from import path to resolve module loading error.
-import { ForecastDataPoint } from '../types';
+// FIX: Added .ts extension to the import path to resolve the module loading error.
+import { ForecastDataPoint } from '../types.ts';
 
 interface ForecastChartProps {
   data: ForecastDataPoint[];
