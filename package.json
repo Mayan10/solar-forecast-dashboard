@@ -1,4 +1,3 @@
-
 {
   "name": "solar-forecaster-ai-server",
   "version": "1.0.0",
@@ -6,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "esbuild index.tsx --bundle --outfile=dist/index.js --jsx=automatic --loader:.tsx=tsx --minify",
+    "build:css": "tailwindcss -i ./main.css -o ./dist/index.css --minify",
+    "build:js": "esbuild index.tsx --bundle --outfile=dist/index.js --jsx=automatic --loader:.tsx=tsx --minify",
+    "build": "npm run build:css && npm run build:js",
     "postinstall": "npm run build"
   },
   "author": "AI Assistant",
@@ -23,10 +24,13 @@
     "@types/node": "^20.14.12",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
     "esbuild": "^0.23.0",
+    "postcss": "^8.4.40",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "recharts": "^2.12.7",
+    "tailwindcss": "^3.4.7",
     "typescript": "^5.5.4"
   }
 }
