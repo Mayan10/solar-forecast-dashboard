@@ -1,5 +1,0 @@
-{
-    "name": "Solar Forecast Dashboard Fix",
-    "description": "A React application that displays solar power generation forecasts and provides AI-powered insights. This version fixes build issues and updates the Gemini API integration.",
-    "requestFramePermissions": []
-  }
