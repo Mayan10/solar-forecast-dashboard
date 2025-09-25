@@ -1,0 +1,33 @@
+# AWS CodeBuild specification file
+version: 0.2
+
+phases:
+  install:
+    # Specify the Node.js runtime version. Use a recent LTS version.
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - echo "Installing Node.js dependencies..."
+      - npm install
+
+  build:
+    commands:
+      - echo "Build started on $(date)"
+      # The 'npm install' command triggers the 'postinstall' script in package.json,
+      # which already runs the build command. We can verify the output here.
+      - echo "Verifying build output..."
+      - ls -la dist
+
+  post_build:
+    commands:
+      - echo "Build completed on $(date)"
+
+# Define the files to be packaged and deployed to Elastic Beanstalk
+artifacts:
+  files:
+    - server.js
+    - index.html
+    - package.json
+    - package-lock.json # Important for consistent dependencies
+    - 'dist/**/*'
+  discard-paths: yes
